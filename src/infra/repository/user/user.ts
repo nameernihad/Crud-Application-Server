@@ -1,5 +1,5 @@
 import { User } from "../../../domain/entities/user/user"
-import { MongoDBUser } from "../../database/model/user"
+import { MongoDBUser } from "../../database/model/user/user"
 
 export type UserRepository ={
     createUser:(user:User)=>Promise<User>;
