@@ -1,9 +1,9 @@
 import mongoose, { Document, Model, Schema } from 'mongoose';
-import { User } from '../../../domain/entities/user/user';
+import { User } from '../../../../domain/entities/user/user';
 
 
 export type MongoDBUser = Model<Document<any, any, any> & User>;
-
+  
 const userSchema:any = new Schema<User>({
   name: { type: String, required: true},
   email:  { type: String, required: true,unique:true},

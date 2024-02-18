@@ -1,7 +1,7 @@
 export type User = {
-    _id:string;
+    _id?:string;
     name?:string;
     email: string;
     password: string;
-    role:string
+    role?:string
 }
